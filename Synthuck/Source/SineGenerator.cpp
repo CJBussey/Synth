@@ -8,6 +8,8 @@
 
 #include "SineGenerator.h"
 
+///////////////////////////////////////////////////////////////////////////////
+
 SineGenerator::SineGenerator()
 :   m_fFrequency(1000)
 ,   m_fPhase(0.0f)
@@ -15,11 +17,15 @@ SineGenerator::SineGenerator()
 {
 }
 
+///////////////////////////////////////////////////////////////////////////////
+
 void SineGenerator::initialise(double fSampleRate)
 {
     m_fSampleFrequency = fSampleRate;
     m_bInitialised = true;
 }
+
+///////////////////////////////////////////////////////////////////////////////
 
 void SineGenerator::processAudio(AudioSampleBuffer& rAudioSampleBuffer)
 {
@@ -42,3 +48,5 @@ void SineGenerator::processAudio(AudioSampleBuffer& rAudioSampleBuffer)
     m_fPhase = fmod(fTmpPhase, 2.0 * M_PI);
     
 }
+
+///////////////////////////////////////////////////////////////////////////////
