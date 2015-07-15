@@ -1,1 +1,3 @@
-Please, don't read me
+Dependencies:
+- JUCE library
+- A supported target SDK (e.g, VST, Audio Unit)
