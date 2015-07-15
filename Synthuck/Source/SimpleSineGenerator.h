@@ -5,10 +5,10 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-class SineGenerator : public Processor
+class SimpleSineGenerator : public Processor
 {
 public:
-    SineGenerator();
+    SimpleSineGenerator();
     
     void initialise(double fSampleRate) override;
     
@@ -26,16 +26,7 @@ private:
     float m_fPhase;
     float m_fAmplitude;
     
-    float m_fCosDelta;
-    float m_fSinDelta;
-    
-    float m_fCosX;
-    float m_fSinX;
-    
-    // Helpers
-    
-    void calculateDeltas();
-    void incrementWaves();
-    
     static const std::string s_aProcessorName;
 };
+
+///////////////////////////////////////////////////////////////////////////////

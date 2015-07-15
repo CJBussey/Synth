@@ -9,7 +9,7 @@ class Processor
 {
 public:
     // Lifetime
-    Processor();
+    Processor(std::string aProcessorName);
     virtual ~Processor() {};
     
     // Initialisation
@@ -22,6 +22,8 @@ public:
     virtual void processMidi(MidiBuffer& rMidiBuffer) = 0;
 
 protected:
+    const std::string m_aProcessorName;
+    
     bool m_bInitialised;
 };
 
