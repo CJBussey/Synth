@@ -8,7 +8,6 @@ const std::string SineGenerator::s_aProcessorName = "SineGenerator";
 SineGenerator::SineGenerator()
 :   Processor(s_aProcessorName)
 ,   m_fFrequency(1000)
-,   m_fPhase(0.0f)
 ,   m_fAmplitude(1.)
 ,   m_fCosDelta(0.)
 ,   m_fSinDelta(0.)
