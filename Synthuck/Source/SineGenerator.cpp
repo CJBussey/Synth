@@ -6,6 +6,9 @@
 //
 //
 
+#define _USE_MATH_DEFINES
+#include <cmath>
+
 #include "SineGenerator.h"
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -48,5 +51,4 @@ void SineGenerator::processAudio(AudioSampleBuffer& rAudioSampleBuffer)
     m_fPhase = fmod(fTmpPhase, 2.0 * M_PI);
     
 }
-
 ///////////////////////////////////////////////////////////////////////////////
