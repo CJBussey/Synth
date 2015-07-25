@@ -6,7 +6,7 @@
 //
 //
 
-#include "WavetableBufferTest.h"
+#include <iostream>
 #include "../Source/WavetableBuffer.h"
 
 int main()
